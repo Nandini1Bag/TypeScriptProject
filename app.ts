@@ -1,9 +1,20 @@
-function add(num1 : number,num2 : number){
-    return num1+num2;
-}
-
-const number1=5;
-const number2=2.8;
-
-const result = add(number1,number2);
-console.log(result);
+// const person: {
+//   name: string;
+//   age: number;
+// } = {
+    const person = {
+        name: 'Maximilian',
+        age: 30,
+        hobbies: ['Sports', 'Cooking']
+      };
+      
+      let favoriteActivities: string[];
+      favoriteActivities = ['Sports'];
+      
+      console.log(person.name);
+      
+      for (const hobby of person.hobbies) {
+        console.log(hobby.toUpperCase());
+        // console.log(hobby.map()); // !!! ERROR !!!
+      }
+      
