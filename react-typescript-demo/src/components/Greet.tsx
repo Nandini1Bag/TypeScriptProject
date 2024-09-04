@@ -1,14 +1,15 @@
 
 type GreetProps={
     name: string;
-    count:number;
+    count?:number;//optional type
 }
 
 function Greet(props:GreetProps) {
+  const {count=0}=props;//optional type
   return (
     <div>
         <h2>
-            Welcome {props.name} !! You have {props.count} new messages.
+            Welcome {props.name} !! You have {count} new messages.
         </h2>
     </div>
   )
