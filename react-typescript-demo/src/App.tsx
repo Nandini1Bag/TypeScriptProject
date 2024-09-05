@@ -7,8 +7,8 @@ import Status from './components/Status';
 import Heading from './components/Heading';
 import Oscar from './components/Oscar';
 import Button from './components/Button';
-import input from './components/input';
 import Input from './components/input';
+import Container from './components/Container';
 
 function App() {
   const fullname={
@@ -41,6 +41,7 @@ function App() {
    </Oscar>
    <Button handleClick={(event,id)=>console.log('button clicked',event,id)}/>
    <Input value='' onChange={(event)=>console.log("input change",event)}/>
+   <Container style={{padding:'2rem',border:'1px solid black', width:'60px' }}/>
     </div>
   );
 }
