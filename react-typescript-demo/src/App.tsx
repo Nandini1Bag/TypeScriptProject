@@ -6,7 +6,9 @@ import PersonList from './components/PersonList';
 import Status from './components/Status';
 import Heading from './components/Heading';
 import Oscar from './components/Oscar';
-
+import Button from './components/Button';
+import input from './components/input';
+import Input from './components/input';
 
 function App() {
   const fullname={
@@ -28,7 +30,7 @@ function App() {
     }
   ]
   return (
-    <div className="App">
+   <div className="App">
    <Greet name='Nandini' />
    <Person fullname={fullname}/>
    <PersonList people={personlist}/>
@@ -37,6 +39,8 @@ function App() {
    <Oscar>
     <Heading>Oscar lives in India</Heading>
    </Oscar>
+   <Button handleClick={(event,id)=>console.log('button clicked',event,id)}/>
+   <Input value='' onChange={(event)=>console.log("input change",event)}/>
     </div>
   );
 }
